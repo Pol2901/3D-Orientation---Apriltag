@@ -9,7 +9,7 @@ from transforms3d.euler import mat2euler
 from transforms3d.quaternions import mat2quat
 
 class SimpleKalman:
-    def __init__(self, process_variance=1e-4, measurement_variance=1e-2):
+    def __init__(self, process_variance=1e-2, measurement_variance=1e-2):
         self.process_variance = process_variance
         self.measurement_variance = measurement_variance
         self.estimate = 0.0
